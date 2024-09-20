@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback   
+ Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Feedback Form</h1>
+    <form id="feedbackForm">   
+
+        <label for="feedbackType">Feedback Type:</label>
+        <select id="feedbackType" name="feedbackType">
+            <option value="suggestion">Suggestion</option>
+            <option value="complaint">Complaint</option>
+            <option value="praise">Praise</option>
+        </select>   
+
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+
+        <label for="websiteRating">Website Rating:</label>
+        <input type="radio" id="excellent" name="websiteRating" value="excellent">
+        <label for="excellent">Excellent</label>
+        <input type="radio" id="good" name="websiteRating" value="good">
+        <label for="good">Good</label>
+        <input type="radio" id="average" name="websiteRating" value="average">
+        <label for="average">Average</label>
+        <input type="radio" id="poor" name="websiteRating" value="poor">
+        <label for="poor">Poor</label>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="10" max="100" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>   
+
+        <input type="password" id="password" name="password" minlength="8" required>   
+
+
+        <label for="websiteUrl">Website URL:</label>
+        <input type="url" id="websiteUrl" name="websiteUrl">
+
+        <label for="termsAndConditions">Terms and Conditions:</label>
+        <input type="checkbox" id="termsAndConditions" name="termsAndConditions" required>
+        <label for="termsAndConditions">I   
+ agree to the terms and conditions</label>   
+
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
